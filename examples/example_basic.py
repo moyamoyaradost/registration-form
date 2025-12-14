@@ -3,7 +3,10 @@
 Решает уравнение x² - 5x - 6 = 0
 """
 import sys
-sys.path.insert(0, '../src')
+from pathlib import Path
+
+# Добавляем путь к src для импорта модулей
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from vieta_core import solve_quadratic, check_vieta, vieta_sum_product
 
